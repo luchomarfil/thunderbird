@@ -1,0 +1,3 @@
+#wordsTracker-button, [place="palette"] > #wordsTracker-button {  
+  list-style-image: url("chrome://wordsTracker/skin/icon.png") !important;  
+}  

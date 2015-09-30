@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://wordsTrackerSkin/skin/overlay.css" type="text/css" ?>  
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ <script type="application/javascript" src="chrome://wordsTracker/content/overlay.js"/><!-- A reference to your JavaScript file -->
+ <toolbarpalette id="MailToolbarPalette">  
+   <toolbarbutton id="wordsTracker-button"  
+     class="wordsTracker-button toolbarbutton-1"  
+     label="Contar Palabras"  
+     type="button"  
+     oncommand="contarPalabras();"  
+     />  
+ </toolbarpalette> 
+</overlay>
