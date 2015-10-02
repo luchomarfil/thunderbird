@@ -1,5 +1,3 @@
-
-
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <title>Resumen de palabras</title>
@@ -18,7 +16,8 @@
          <script type="application/javascript;version=1.7" src="chrome://messenger/content/about-support/a11y.js"></script>
          <script type="application/javascript;version=1.7" src="chrome://messenger/content/about-support/libversions.js"></script>
          <script type="application/javascript;version=1.7" src="chrome://messenger/content/about-support/export.js"></script> -->
-         <script type="application/javascript;version=1.7" src="chrome://wordsTracker/content/overlay.js"></script>
+         <script type="application/javascript" src="chrome://messenger/content/jquery.js"/>
+         <script type="application/javascript" src="chrome://wordsTracker/content/overlay.js"/>         
    </head>
    <body dir="ltr">
       <h1>Resumen de palabras</h1>
@@ -29,12 +28,11 @@
          <button onclick="analizarPalabras()">Analizar Palabras</button>
       </div>
       <div id="contents">         
-         <!-- - - - - - - - - - - - - - - - - - - - - -->  
-         <!-- - - - - - - - - - - - - - - - - - - - - -->
+
          <h2 class="major-section">
             Preferencias importantes modificadas
          </h2>
-         <table class="prefs-table">
+         <table class="palabras-table">
             <thead>
                <tr>
                   <th class="name">
@@ -45,13 +43,24 @@
                   </th>
                </tr>
             </thead>
-            <tbody id="prefs-tbody">
+            <tbody id="palabras-body">
                <tr>
                   <td class="pref-name">accessibility.typeaheadfind.flashBar</td>
                   <td class="pref-value">0</td>
                </tr>
+               <tr>
+                  <td class="pref-name">accessibility.</td>
+                  <td class="pref-value">40</td>
+               </tr>
             </tbody>
          </table>         
+         
+         <h2 class="major-section">
+            Debug
+         </h2>
+         <div id="wordsTracker-info">
+           <p id="wordsTracker-textOutput" />
+         </div>         
       </div>
    </body>
 </html>
